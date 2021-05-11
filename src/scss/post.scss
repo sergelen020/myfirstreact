@@ -1,0 +1,42 @@
+$bordercolor: #dbdbdb;
+.post {
+    margin-top: 25px;
+    border: 1px solid $bordercolor;
+    margin-bottom: 20px;
+    .profilepic {
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+        margin: 20px;
+        border: 1px solid $bordercolor;
+        border-radius: 50% !important;
+    }
+    .username {
+        margin: 30px;
+        margin-left: 0 !important;
+    }
+    .more {
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+    .postpic {
+        margin-top: -20px !important;
+    }
+    .bottom {
+        margin: 10px;
+        .svgs {
+            margin-right: 0px;
+            margin-left: -10px !important;
+        }
+        .save {
+            margin-right: -10px !important;
+        }
+    }
+    .likes {
+        margin-left: 20px;
+    }
+    P {
+        font-size: 10px;
+        margin-left: 20px;
+    }
+}

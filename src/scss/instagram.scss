@@ -1,0 +1,52 @@
+$bordercolor: #dbdbdb;
+.container {
+    max-width: 750px !important;
+}
+nav {
+    background-color: white !important;
+    height: 52px;
+    img {
+        height: 30px;
+    }
+    .insta-logo {
+        height: 40px;
+        padding-top: 10px;
+    }
+    .input-field {
+        height: 28px;
+        width: 215px;
+        color: black;
+        border: 1px solid $bordercolor;
+        border-radius: 3px;
+        margin-top: 10px !important;
+
+        label {
+            left: 0px !important;
+            i {         
+                left: 0px !important;
+                color: $bordercolor !important;
+            }
+        }
+        i {
+            right: 0px !important;
+            top: -7px  !important;
+            line-height: normal !important;
+        }
+    }
+}
+.story {
+    margin-top: 30px;
+    height: 110px;
+    width: 100%;
+    border: 1px solid $bordercolor;
+    .storyProfilePic {
+        width: 60px;
+        height: 60px;
+        padding: 2px;
+        margin: 10px;
+        margin-top: 20px;
+        border: 2px solid #eb5b4f;
+        border-color: linear-gradient(to right, red, purple);
+        border-radius: 50% !important;
+    }
+}
