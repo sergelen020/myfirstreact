@@ -31,17 +31,18 @@ const App = () => {
     return (
         <div>
             {
-                <div>
+                isStory 
+                ? <Story />
+                : <div>
                     <Header />
-                    <StoryList />
+                    <StoryList setIsStory={ setIsStory }/>
                     {
                         posts.map(post => (
                             <Post avatarUrl={ post.avatarUrl } username={ post.username } imageUrl={ post.imageUrl } dateTime={ post.dateTime }/>
                         ))
                     }
                 </div>
-            } 
-            
+            }            
         </div>
     )
 }

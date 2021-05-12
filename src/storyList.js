@@ -3,7 +3,7 @@ import "./scss/storyList.scss";
 import Story from './story';
 import StoryAvatar from './storyAvatar';
 
-function StoryList(props) {
+function StoryList({ setIsStory }) {
     const stories = [
         {
             avatar: "https://images.unsplash.com/photo-1589111502533-e78e1fae673e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
@@ -45,7 +45,7 @@ function StoryList(props) {
     return(
         <div className="z-depth-1 container">
             <div className="story-list">
-                { stories.map(story => (<StoryAvatar {...story}/>))}
+                { stories.map(story => (<StoryAvatar {...story} setIsStory={ setIsStory }/>))}
             </div>
         </div>
     )
